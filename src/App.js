@@ -1,12 +1,19 @@
 import './App.css';
-import Counter from './components/Counter'
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Form from "./components/Form/Form";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-         <Counter />
-      </header>
+         <Header/>
+        <div className='main'>
+            <Sidebar/>
+            <Form />
+        </div>
+
+
     </div>
   );
 }
